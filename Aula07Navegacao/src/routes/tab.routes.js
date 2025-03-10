@@ -13,7 +13,9 @@ export default function TabRoutes(){
                 options={{tabBarIcon:()=><Feather name='home' size={20} color='red'/>}}
             />
 
-            <Tab.Screen  name='login' component={Login}/>
+            <Tab.Screen  name='login' component={Login}
+                option={{tabBarIcon:()=><Feather name= 'log-in' size={20} color ='red'/>}}
+            />
         </Tab.Navigator>
     )
 }
