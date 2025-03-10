@@ -1,0 +1,16 @@
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import Home from "../screens/Home";
+import Login from "../screens/Login";
+
+const Tab = createBottomTabNavigator()
+
+export default function TabRoutes(){
+    return(
+        <Tab.Navigator screenOptions={{headerTitleAlign:"center", }}
+        
+        >
+            <Tab.Screen  name='home' component={Home}/>
+            <Tab.Screen  name='login' component={Login}/>
+        </Tab.Navigator>
+    )
+}
